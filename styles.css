@@ -1,0 +1,127 @@
+/* Establecemos una fuente base para todo el documento */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #3498db;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+nav button:hover {
+  background-color: #1abc9c;
+}
+
+/* Estilo de las secciones */
+section {
+  display: none;
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la sección activa */
+section.active {
+  display: block;
+}
+
+/* Estilo para las entradas de número */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Etiquetas de los campos */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Botón de calcular */
+button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+/* Estilo de los resultados */
+p#resultado-suma,
+p#resultado-resta,
+p#resultado-multiplicacion,
+p#resultado-division {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Estilo de la lista de actividades */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 1.2em;
+}
+
+ul li a:hover {
+  color: #1abc9c;
+}
+ 

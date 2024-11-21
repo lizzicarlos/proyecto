@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende operaciones matemáticas básicas como suma, resta, multiplicación y división.">
+  <meta name="keywords" content="matemáticas, educación, operaciones, suma, resta, multiplicación, división">
+  <title>Sitio Educativo de Matemáticas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sitio Educativo de Matemáticas</h1>
+    <p>Aprende y practica operaciones matemáticas básicas.</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('suma')">Suma</button>
+    <button onclick="showSection('resta')">Resta</button>
+    <button onclick="showSection('multiplicacion')">Multiplicación</button>
+    <button onclick="showSection('division')">División</button>
+    <button onclick="showSection('actividades')">Actividades Interactivas</button>
+  </nav>
+
+  <main>
+    <section id="inicio" class="active">
+      <h2>Inicio</h2>
+      <p>Bienvenido a nuestra página de matemáticas. Selecciona una operación para aprender y practicar.</p>
+    </section>
+
+    <section id="suma">
+      <h2>Suma</h2>
+      <p>La suma es juntar cosas. Por ejemplo, si tienes 2 manzanas y consigues 3 más, tendrás 5.</p>
+      <label for="num1-suma">Número 1</label>
+      <input type="number" id="num1-suma" placeholder="Número 1">
+      <label for="num2-suma">Número 2</label>
+      <input type="number" id="num2-suma" placeholder="Número 2">
+      <button onclick="calcular('suma')">Calcular</button>
+      <p id="resultado-suma"></p>
+    </section>
+
+    <section id="resta">
+      <h2>Resta</h2>
+      <p>La resta es quitar cosas. Si tienes 5 manzanas y comes 2, te quedan 3.</p>
+      <label for="num1-resta">Número 1</label>
+      <input type="number" id="num1-resta" placeholder="Número 1">
+      <label for="num2-resta">Número 2</label>
+      <input type="number" id="num2-resta" placeholder="Número 2">
+      <button onclick="calcular('resta')">Calcular</button>
+      <p id="resultado-resta"></p>
+    </section>
+
+    <section id="multiplicacion">
+      <h2>Multiplicación</h2>
+      <p>La multiplicación es sumar el mismo número muchas veces. Por ejemplo, 3 veces 2 es como sumar 2 + 2 + 2.</p>
+      <label for="num1-multiplicacion">Número 1</label>
+      <input type="number" id="num1-multiplicacion" placeholder="Número 1">
+      <label for="num2-multiplicacion">Número 2</label>
+      <input type="number" id="num2-multiplicacion" placeholder="Número 2">
+      <button onclick="calcular('multiplicacion')">Calcular</button>
+      <p id="resultado-multiplicacion"></p>
+    </section>
+
+    <section id="division">
+      <h2>División</h2>
+      <p>La división es repartir en partes iguales. Si tienes 6 manzanas y las compartes con 3 amigos, cada uno recibe 2.</p>
+      <label for="num1-division">Número 1</label>
+      <input type="number" id="num1-division" placeholder="Número 1">
+      <label for="num2-division">Número 2</label>
+      <input type="number" id="num2-division" placeholder="Número 2">
+      <button onclick="calcular('division')">Calcular</button>
+      <p id="resultado-division"></p>
+    </section>
+
+    <section id="actividades">
+      <h2>Actividades Interactivas</h2>
+      <p>Prueba nuestros juegos y descarga ejercicios para practicar fuera de línea.</p>
+      <ul>
+        <li><a href="#">Juego: Relacionar números</a></li>
+        <li><a href="#">Hojas imprimibles</a></li>
+        <li><a href="#">Tablero de recompensas</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
